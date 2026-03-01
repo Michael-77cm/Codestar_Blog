@@ -20,3 +20,8 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+from blog.views import my_blog
+urlpatterns = [
+path('blog/', my_blog, name='blog'),
+]
